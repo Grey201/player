@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="text/javascript" src="./script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mp3tag.js@latest/dist/mp3tag.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="dropzone">
+            <p>Перетащите или <button onClick="chooseFile()">выберите</button> файл</p>
+        </div>
+
+        <input type="text" id="linkInput" onChange="processLink()" placeholder="Вставьте ссылку на файл">
+
+        <div class="playerContainer">
+            <div>
+                <img id="cover" />
+            <div class="songInfo">
+                <span id="artist"></span>
+                
+                <span id="song"></span>
+               </div> 
+            </div>
+            <audio id="player" controls></audio>
+        </div>
+    </div>
+</body>
+
+</html>
